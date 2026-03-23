@@ -1,7 +1,5 @@
-"use client"
-
+import Tabs from "@/components/tabs";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -18,13 +16,15 @@ export default function Home() {
             <div className="flex flex-col items-center gap-4">
               <Link href="/sign-up">
                 <Button size="lg" className="h-12 px-8 text-lg font-medium">
-                  Start for free <ArrowRight className="ml-2" />
+                  Start
                 </Button>
               </Link>
               <p className="text-sm text-muted-foreground">Free forever</p>
             </div>
           </div>
         </section>
+        {/* Tabs section */}
+    <Tabs />
       </main>
     </div>
   );
